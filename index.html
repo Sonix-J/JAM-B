@@ -11,32 +11,51 @@
 
     <title>JAM-B</title>
   </head>
-  <body class="bg-black text-white">
-    <header class="bg-black">
+  <body class="bg-[#1b1b1b] text-white">
+    <header class="bg-black fixed top-0 left-0 w-full z-[100]">
       <nav class="flex justify-between px-10 h-14 items-center">
         <a href="#" class="font-bold text-2xl whitespace-nowrap">JAM-B</a>
         <div
-          class="dropdown-menu absolute -top-full right-0 w-full bg-black flex flex-col items-end px-10 py-2 transition-all duration-300 z-50 md:static md:w-auto md:px-0 md:py-0"
+          class="dropdown-menu hidden absolute -top-full right-0 w-full bg-black flex-col items-end px-10 py-2 transition-all duration-300 z-[100] md:flex md:static md:w-auto md:px-0 md:py-0"
         >
           <ul class="gap-6 flex flex-col md:flex-row">
-            <li class="hover:text-red-500 cursor-pointer">Home</li>
             <li>
-              <a href="#programs" class="hover:text-red-500 cursor-pointer">
+              <a
+                href="#"
+                class="hover:text-red-500 cursor-pointer relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-red-500 after:transition-all after:duration-300 hover:after:w-full inline-block"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#programs"
+                class="hover:text-red-500 cursor-pointer relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-red-500 after:transition-all after:duration-300 hover:after:w-full inline-block"
+              >
                 Programs
               </a>
             </li>
             <li>
-              <a href="#trainers" class="hover:text-red-500 cursor-pointer">
+              <a
+                href="#trainers"
+                class="hover:text-red-500 cursor-pointer relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-red-500 after:transition-all after:duration-300 hover:after:w-full inline-block"
+              >
                 Trainers
               </a>
             </li>
             <li>
-              <a href="#plans" class="hover:text-red-500 cursor-pointer">
+              <a
+                href="#plans"
+                class="hover:text-red-500 cursor-pointer relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-red-500 after:transition-all after:duration-300 hover:after:w-full inline-block"
+              >
                 Plans
               </a>
             </li>
             <li>
-              <a href="#contact" class="hover:text-red-500 cursor-pointer">
+              <a
+                href="#contact"
+                class="hover:text-red-500 cursor-pointer relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-red-500 after:transition-all after:duration-300 hover:after:w-full inline-block"
+              >
                 Contact
               </a>
             </li>
@@ -47,7 +66,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="pt-14">
       <!-- Hero Section  -->
       <section
         class="relative h-screen bg-[url('images/bg.avif')] bg-cover bg-center flex justify-center items-center before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-50"
@@ -59,7 +78,7 @@
           <div class="flex justify-center mt-10">
             <a href="#plans"
               ><button
-                class="bg-red-500 px-10 py-3 rounded-3xl cursor-pointer hover:bg-white hover:text-black"
+                class="bg-red-500 px-10 py-3 rounded-3xl cursor-pointer hover:bg-white hover:text-black transition-colors duration-300"
               >
                 View Plans
               </button></a
@@ -68,48 +87,120 @@
         </div>
       </section>
       <!-- Programs  -->
-      <section id="programs" class="bg-black p-10 border-b border-red-500">
-        <div class="flex justify-center items-center">
-          <h3 class="text-4xl font-bold">Programs</h3>
-        </div>
-        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-10">
-          <div class="flex flex-col p-4 gap-5 bg-gray-500 rounded transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl">
-            <h1 class="font-bold text-2xl">Zumba</h1>
-            <p class="border-b pb-5">High-energy dance workouts that burn calories while having fun with upbeat music.</p>
-            <i class="fa-solid fa-arrow-right"></i>
+      <section
+        id="programs"
+        class="p-10 bg-red-500 min-h-screen relative overflow-hidden"
+      >
+        <div
+          class="absolute top-0 right-0 w-96 h-96 bg-black/10 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"
+        ></div>
+
+        <div class="relative z-10">
+          <div class="flex flex-col justify-center items-center gap-4 mt-10">
+            <h3 class="text-4xl font-bold text-white">Our Programs</h3>
+            <p class="text-center max-w-2xl mx-auto text-white/90">
+              Choose from our diverse range of fitness programs designed to help
+              you achieve your goals
+            </p>
           </div>
-          <div class="flex flex-col p-4 gap-5 bg-gray-500 rounded transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl">
-            <h1 class="font-bold text-2xl">Yoga</h1>
-            <p class="border-b pb-5">Improve flexibility, balance, and mental focus through guided poses and breathing.</p>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-          <div class="flex flex-col p-4 gap-5 bg-gray-500 rounded transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl">
-            <h1 class="font-bold text-2xl">Boxing / Muay Thai / Taekwando</h1>
-            <p class="border-b pb-5">Build strength, discipline, and confidence with powerful combat-based training.</p>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-          <div class="flex flex-col p-4 gap-5 bg-gray-500 rounded transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl">
-            <h1 class="font-bold text-2xl">Belly Dancing</h1>
-            <p class="border-b pb-5">A fun, low-impact workout that tones the core and improves body coordination.</p>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-          <div class="flex flex-col p-4 gap-5 bg-gray-500 rounded transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl">
-            <h1 class="font-bold text-2xl">Ballroom Dancing</h1>
-            <p class="border-b pb-5">Elegant partner dances that boost coordination, posture, and rhythm.</p>
-            <i class="fa-solid fa-arrow-right"></i>
+          <div
+            class="grid gap-5 mt-16 grid-cols-[repeat(auto-fit,minmax(250px,1fr))]"
+          >
+            <div
+              class="group flex flex-col p-6 gap-5 bg-white text-black rounded transition-all duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl hover:shadow-black/20 border-2 border-transparent"
+            >
+              <h1 class="font-bold text-2xl">Zumba</h1>
+              <p class="text-gray-700 leading-relaxed flex-grow">
+                High-energy dance workouts that burn calories while having fun
+                with upbeat music.
+              </p>
+              <div
+                class="flex items-center gap-2 text-red-500 font-semibold group-hover:gap-4 transition-all"
+              >
+                <span></span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div
+              class="group flex flex-col p-6 gap-5 bg-black text-white rounded transition-all duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl hover:shadow-black/40 border-2 border-white/10"
+            >
+              <h1 class="font-bold text-2xl">Yoga</h1>
+              <p class="text-gray-300 leading-relaxed flex-grow">
+                Improve flexibility, balance, and mental focus through guided
+                poses and breathing.
+              </p>
+              <div
+                class="flex items-center gap-2 text-red-500 font-semibold group-hover:gap-4 transition-all"
+              >
+                <span></span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div
+              class="group flex flex-col p-6 gap-5 bg-white text-black rounded transition-all duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl hover:shadow-black/20 border-2 border-transparent"
+            >
+              <h1 class="font-bold text-2xl">Combat Sports</h1>
+              <p class="text-gray-700 leading-relaxed flex-grow">
+                Build strength, discipline, and confidence with powerful
+                combat-based training.
+              </p>
+              <div
+                class="flex items-center gap-2 text-red-500 font-semibold group-hover:gap-4 transition-all"
+              >
+                <span></span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div
+              class="group flex flex-col p-6 gap-5 bg-black text-white rounded transition-all duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl hover:shadow-black/40 border-2 border-white/10"
+            >
+              <h1 class="font-bold text-2xl">Belly Dancing</h1>
+              <p class="text-gray-300 leading-relaxed flex-grow">
+                A fun, low-impact workout that tones the core and improves body
+                coordination.
+              </p>
+              <div
+                class="flex items-center gap-2 text-red-500 font-semibold group-hover:gap-4 transition-all"
+              >
+                <span></span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div
+              class="group flex flex-col p-6 gap-5 bg-white text-black rounded transition-all duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl hover:shadow-black/20 border-2 border-transparent"
+            >
+              <h1 class="font-bold text-2xl">Ballroom Dancing</h1>
+              <p class="text-gray-700 leading-relaxed flex-grow">
+                Elegant partner dances that boost coordination, posture, and
+                rhythm.
+              </p>
+              <div
+                class="flex items-center gap-2 text-red-500 font-semibold group-hover:gap-4 transition-all"
+              >
+                <span></span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!-- Trainers -->
-      <section id="trainers" class="bg-black p-10 border-b border-red-500">
-        <div class="flex justify-center items-center">
-          <h3 class="text-4xl font-bold">Your trainers</h3>
+      <section id="trainers" class="p-20 border-b border-red-500 min-h-screen">
+        <div class="flex flex-col justify-center items-center gap-4 mt-10">
+          <h3 class="text-4xl font-bold">Meet Our Trainers</h3>
+          <p class="text-center max-w-2xl mx-auto text-white/60">
+            Whether you're looking to build strength, improve flexibility, or
+            embark on a transformative fitness journey.
+          </p>
         </div>
         <div
-          class="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-10"
+          class="grid gap-4 mt-20 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] max-w-[1000px] mx-auto"
         >
           <div
-            class="group relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer max-w-xs mx-auto"
+            class="group relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer max-w-xs mx-auto w-full"
           >
             <div class="relative aspect-[3/4] overflow-hidden">
               <img
@@ -118,7 +209,7 @@
               />
 
               <div
-                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent p-6 transition-transform duration-500 ease-out"
               >
                 <h3 class="text-2xl font-bold text-white mb-1">
                   Skyler Quijano
@@ -128,7 +219,7 @@
             </div>
           </div>
           <div
-            class="group relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer max-w-xs mx-auto"
+            class="group relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer max-w-xs mx-auto w-full"
           >
             <div class="relative aspect-[3/4] overflow-hidden">
               <img
@@ -137,7 +228,7 @@
               />
 
               <div
-                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent p-6 transition-transform duration-500 ease-out"
               >
                 <h3 class="text-2xl font-bold text-white mb-1">
                   Skyler Quijano
@@ -147,7 +238,7 @@
             </div>
           </div>
           <div
-            class="group relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer max-w-xs mx-auto"
+            class="group relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer max-w-xs mx-auto w-full"
           >
             <div class="relative aspect-[3/4] overflow-hidden">
               <img
@@ -156,45 +247,7 @@
               />
 
               <div
-                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"
-              >
-                <h3 class="text-2xl font-bold text-white mb-1">
-                  Skyler Quijano
-                </h3>
-                <p class="text-gray-300 text-sm">21 years old</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="group relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer max-w-xs mx-auto"
-          >
-            <div class="relative aspect-[3/4] overflow-hidden">
-              <img
-                src="./images/coach-sky.jpg"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-
-              <div
-                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"
-              >
-                <h3 class="text-2xl font-bold text-white mb-1">
-                  Skyler Quijano
-                </h3>
-                <p class="text-gray-300 text-sm">21 years old</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="group relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer max-w-xs mx-auto"
-          >
-            <div class="relative aspect-[3/4] overflow-hidden">
-              <img
-                src="./images/coach-sky.jpg"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-
-              <div
-                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"
+                class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent p-6 transition-transform duration-500 ease-out"
               >
                 <h3 class="text-2xl font-bold text-white mb-1">
                   Skyler Quijano
@@ -206,111 +259,193 @@
         </div>
       </section>
       <!-- Plans -->
-      <section id="plans" class="bg-black p-10">
-        <div class="flex justify-center items-center">
-          <h3 class="text-4xl font-bold">Our plans</h3>
+      <section id="plans" class="p-20 min-h-screen">
+        <div class="flex flex-col justify-center items-center gap-4 mt-10">
+          <p class="text-red-500">Pricing Plan</p>
+          <h3 class="text-4xl font-bold">CHOOSE YOUR PLAN</h3>
+          <p class="text-white/60">Pick a plan that works best for you.</p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+        <div
+          class="grid gap-6 mt-10 grid-cols-[repeat(auto-fit,minmax(280px,1fr))]"
+        >
           <div
-            class="flex flex-col bg-gray-800 rounded-2xl p-4 transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl"
+            class="flex flex-col bg-black rounded p-4 transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl"
           >
-            <div class="border-b border-gray-900 pb-4">
-              <h1 class="font-bold text-2xl">Basic Membership - 800</h1>
+            <div class="border-b pb-4 flex flex-col gap-10">
+              <h1 class="font-bold text-2xl">Basic Membership</h1>
+              <h1 class="font-bold">
+                <span class="text-4xl text-red-500">₱800</span> /month
+              </h1>
             </div>
             <div>
               <ul class="flex flex-col gap-5 mt-5">
-                <li>Gym Equipment (Treadmill excluded)</li>
-                <li>
-                  Free Zumba Fitness session every
-                  <strong class="font-bold">
-                    Monday, Wednesday &amp; Friday
-                  </strong>
-                </li>
-                <li>Access to exclusive members-only events</li>
+                <div class="flex flex-row gap-4">
+                  <i class="fa-solid fa-check"></i>
+                  <li class="text-white/80">
+                    Gym Equipment (Treadmill excluded)
+                  </li>
+                </div>
+                <div class="flex flex-row gap-4">
+                  <i class="fa-solid fa-check"></i>
+                  <li class="text-white/80">
+                    Free Zumba Fitness session every
+                    <strong class="font-bold">
+                      Monday, Wednesday &amp; Friday
+                    </strong>
+                  </li>
+                </div>
+                <div class="flex flex-row gap-4">
+                  <i class="fa-solid fa-check"></i>
+                  <li class="text-white/80">
+                    Access to exclusive members-only events
+                  </li>
+                </div>
               </ul>
             </div>
           </div>
           <div
-            class="flex flex-col bg-gray-800 rounded-2xl p-4 transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl"
+            class="flex flex-col bg-black rounded p-4 transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl"
           >
-            <div class="border-b border-gray-900 pb-4">
-              <h1 class="font-bold text-2xl">Full Membership - 1,500</h1>
+            <div class="border-b pb-4 flex flex-col gap-10">
+              <h1 class="font-bold text-2xl">Full Membership</h1>
+              <h1 class="font-bold">
+                <span class="text-4xl text-red-500">₱1,500</span> /month
+              </h1>
             </div>
             <div>
               <ul class="flex flex-col gap-5 mt-5">
-                <li>Gym Equipment (Treadmill excluded)</li>
-                <li>Treadmill</li>
-                <li>Zumba Fitness Session</li>
-                <li>Yoga Session</li>
-                <li>Belly Dancing Session</li>
-                <li>Access to exclusive members-only events</li>
+                <div class="flex flex-row gap-4">
+                  <i class="fa-solid fa-check"></i>
+                  <li class="text-white/80">
+                    Gym Equipment (Treadmill excluded)
+                  </li>
+                </div>
+                <div class="flex flex-row gap-4">
+                  <i class="fa-solid fa-check"></i>
+                  <li class="text-white/80">Treadmill</li>
+                </div>
+                <div class="flex flex-row gap-4">
+                  <i class="fa-solid fa-check"></i>
+                  <li class="text-white/80">Zumba Fitness Session</li>
+                </div>
+                <div class="flex flex-row gap-4">
+                  <i class="fa-solid fa-check"></i>
+                  <li class="text-white/80">Yoga Session</li>
+                </div>
+                <div class="flex flex-row gap-4">
+                  <i class="fa-solid fa-check"></i>
+                  <li class="text-white/80">Belly Dancing Session</li>
+                </div>
+                <div class="flex flex-row gap-4">
+                  <i class="fa-solid fa-check"></i>
+                  <li class="text-white/80">
+                    Access to exclusive members-only events
+                  </li>
+                </div>
               </ul>
             </div>
           </div>
           <div
-            class="flex flex-col bg-gray-800 rounded-2xl p-4 transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl"
+            class="flex flex-col bg-black rounded p-4 transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl"
           >
-            <div class="border-b border-gray-900 pb-4">
-              <h1 class="font-bold text-2xl">Basic Package - 1,800</h1>
+            <div class="border-b pb-4 flex flex-col gap-10">
+              <h1 class="font-bold text-2xl">Basic Package</h1>
+              <h1 class="font-bold">
+                <span class="text-4xl text-red-500">₱1,800</span> /month
+              </h1>
             </div>
             <div>
               <ul class="flex flex-col gap-5 mt-5">
-                <li>Gym Equipment (Treadmill excluded)</li>
-                <li>
-                  Free Zumba Fitness session every
-                  <strong class="font-bold">
-                    Monday, Wednesday &amp; Friday
-                  </strong>
-                </li>
-                <li>Unlimited personal training sessions</li>
-                <li>Access to exclusive members-only events</li>
+                <div class="flex flex-row gap-4">
+                  <i class="fa-solid fa-check"></i>
+                  <li class="text-white/80">
+                    Gym Equipment (Treadmill excluded)
+                  </li>
+                </div>
+                <div class="flex flex-row gap-4">
+                  <i class="fa-solid fa-check"></i>
+                  <li class="text-white/80">
+                    Free Zumba Fitness session every
+                    <strong class="font-bold">
+                      Monday, Wednesday &amp; Friday
+                    </strong>
+                  </li>
+                </div>
+                <div class="flex flex-row gap-4">
+                  <i class="fa-solid fa-check"></i>
+                  <li class="text-white/80">
+                    Unlimited personal training sessions
+                  </li>
+                </div>
+                <div class="flex flex-row gap-4">
+                  <i class="fa-solid fa-check"></i>
+                  <li class="text-white/80">
+                    Access to exclusive members-only events
+                  </li>
+                </div>
               </ul>
             </div>
           </div>
 
           <div
-            class="flex flex-col bg-gray-800 rounded-2xl p-4 transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl"
+            class="flex flex-col bg-black rounded p-4 transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl"
           >
-            <div class="border-b border-gray-900 pb-4">
-              <h1 class="font-bold text-2xl">Full Package - 2,500</h1>
+            <div class="border-b pb-4">
+              <h1 class="font-bold text-2xl">Non-Members</h1>
             </div>
             <div>
               <ul class="flex flex-col gap-5 mt-5">
-                <li>Gym Equipment</li>
-                <li>Treadmill</li>
-                <li>Zumba Ftiness Session</li>
-                <li>Yoga Session</li>
-                <li>Belly Dancing Session</li>
-                <li>Access to exclusive members-only events</li>
+                <div class="flex flex-row gap-4 justify-between">
+                  <div class="flex flex-row gap-4">
+                    <i class="fa-solid fa-check"></i>
+                    <li class="text-white/80">Gym Use/ Walk-In</li>
+                  </div>
+                  <span class="text-red-500 font-bold">₱70</span>
+                </div>
+                <div class="flex flex-row gap-4 justify-between">
+                  <div class="flex flex-row gap-4">
+                    <i class="fa-solid fa-check"></i>
+                    <li class="text-white/80">Zumba</li>
+                  </div>
+                  <span class="text-red-500 font-bold">₱50</span>
+                </div>
+                <div class="flex flex-row gap-4 justify-between">
+                  <div class="flex flex-row gap-4">
+                    <i class="fa-solid fa-check"></i>
+                    <li class="text-white/80">Treadmill</li>
+                  </div>
+                  <span class="text-red-500 font-bold">₱50</span>
+                </div>
+                <div class="flex flex-row gap-4 justify-between">
+                  <div class="flex flex-row gap-4">
+                    <i class="fa-solid fa-check"></i>
+                    <li class="text-white/80">HIIT</li>
+                  </div>
+                  <span class="text-red-500 font-bold">₱150</span>
+                </div>
+                <div class="flex flex-row gap-4 justify-between">
+                  <div class="flex flex-row gap-4">
+                    <i class="fa-solid fa-check"></i>
+                    <li class="text-white/80">Boxing</li>
+                  </div>
+                  <span class="text-red-500 font-bold">₱300</span>
+                </div>
+                <div class="flex flex-row gap-4 justify-between">
+                  <div class="flex flex-row gap-4">
+                    <i class="fa-solid fa-check"></i>
+                    <li class="text-white/80">Yoga</li>
+                  </div>
+                  <span class="text-red-500 font-bold">₱200</span>
+                </div>
+                <div class="flex flex-row gap-4 justify-between">
+                  <div class="flex flex-row gap-4">
+                    <i class="fa-solid fa-check"></i>
+                    <li class="text-white/80">Belly Dancing</li>
+                  </div>
+                  <span class="text-red-500 font-bold">₱100</span>
+                </div>
               </ul>
             </div>
-          </div>
-        </div>
-        <div
-          class="flex flex-col bg-gray-800 rounded-2xl p-4 transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl mt-10"
-        >
-          <div class="border-b border-gray-900 pb-4">
-            <h1 class="font-bold text-2xl">Non-Members</h1>
-          </div>
-          <div class="flex flex-row justify-between">
-            <ul class="flex flex-col gap-5 mt-5">
-              <li>Gym Use/ Walk-In</li>
-              <li>Zumba</li>
-              <li>Treadmill</li>
-              <li>HIIT</li>
-              <li>Boxing</li>
-              <li>Yoga</li>
-              <li>Belly Dancing</li>
-            </ul>
-            <ul class="flex flex-col gap-5 mt-5">
-              <li>70</li>
-              <li>50</li>
-              <li>50</li>
-              <li>150</li>
-              <li>300</li>
-              <li>200</li>
-              <li>100</li>
-            </ul>
           </div>
         </div>
       </section>
@@ -345,6 +480,8 @@
       const dropdown = document.querySelector(".dropdown-menu");
 
       toggleBtn.addEventListener("click", () => {
+        dropdown.classList.toggle("hidden");
+        dropdown.classList.toggle("flex");
         dropdown.classList.toggle("top-14");
       });
     </script>
