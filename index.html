@@ -20,8 +20,11 @@
         >
           <ul class="gap-6 flex flex-col md:flex-row">
             <li class="hover:text-red-500 cursor-pointer">Home</li>
-            <li class="hover:text-red-500 cursor-pointer">Schedules</li>
-            <li class="hover:text-red-500 cursor-pointer">Programs</li>
+            <li>
+              <a href="#programs" class="hover:text-red-500 cursor-pointer">
+                Programs
+              </a>
+            </li>
             <li>
               <a href="#trainers" class="hover:text-red-500 cursor-pointer">
                 Trainers
@@ -64,13 +67,46 @@
           </div>
         </div>
       </section>
+      <!-- Programs  -->
+      <section id="programs" class="bg-black p-10 border-b border-red-500">
+        <div class="flex justify-center items-center">
+          <h3 class="text-4xl font-bold">Programs</h3>
+        </div>
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-10">
+          <div class="flex flex-col p-4 gap-5 bg-gray-500 rounded transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl">
+            <h1 class="font-bold text-2xl">Zumba</h1>
+            <p class="border-b pb-5">High-energy dance workouts that burn calories while having fun with upbeat music.</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="flex flex-col p-4 gap-5 bg-gray-500 rounded transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl">
+            <h1 class="font-bold text-2xl">Yoga</h1>
+            <p class="border-b pb-5">Improve flexibility, balance, and mental focus through guided poses and breathing.</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="flex flex-col p-4 gap-5 bg-gray-500 rounded transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl">
+            <h1 class="font-bold text-2xl">Boxing / Muay Thai / Taekwando</h1>
+            <p class="border-b pb-5">Build strength, discipline, and confidence with powerful combat-based training.</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="flex flex-col p-4 gap-5 bg-gray-500 rounded transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl">
+            <h1 class="font-bold text-2xl">Belly Dancing</h1>
+            <p class="border-b pb-5">A fun, low-impact workout that tones the core and improves body coordination.</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="flex flex-col p-4 gap-5 bg-gray-500 rounded transition-transform duration-300 ease-out hover:-translate-y-3 hover:shadow-2xl">
+            <h1 class="font-bold text-2xl">Ballroom Dancing</h1>
+            <p class="border-b pb-5">Elegant partner dances that boost coordination, posture, and rhythm.</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </section>
       <!-- Trainers -->
       <section id="trainers" class="bg-black p-10 border-b border-red-500">
         <div class="flex justify-center items-center">
           <h3 class="text-4xl font-bold">Your trainers</h3>
         </div>
         <div
-          class="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-10 "
+          class="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-10"
         >
           <div
             class="group relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer max-w-xs mx-auto"
@@ -287,11 +323,19 @@
           </div>
           <div class="flex items-center gap-3">
             <i class="fa-brands fa-facebook"></i>
-            <a href="https://www.facebook.com/groups/893855814505850" target="_blank">Facebook</a>
+            <a
+              href="https://www.facebook.com/groups/893855814505850"
+              target="_blank"
+              >Facebook</a
+            >
           </div>
           <div class="flex items-center gap-3">
             <i class="fa-brands fa-instagram"></i>
-            <a href="https://www.instagram.com/jambfitnesshubandspa/" target="_blank">Instagram</a>
+            <a
+              href="https://www.instagram.com/jambfitnesshubandspa/"
+              target="_blank"
+              >Instagram</a
+            >
           </div>
         </div>
       </section>
