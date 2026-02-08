@@ -7,3 +7,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.stroke-white {
+  -webkit-text-stroke: 2px white;
+}
